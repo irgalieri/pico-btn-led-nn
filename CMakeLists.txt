@@ -24,7 +24,7 @@ if (TARGET tinyusb_device)
     pico_enable_stdio_usb(pico-btn-led-nn 1)
 
     # Add the standard library to the build
-    target_link_libraries(pico-btn-led-nn pico_stdlib)
+    target_link_libraries(pico-btn-led-nn pico_stdlib pico_multicore)
 
     pico_add_extra_outputs(pico-btn-led-nn)
 elseif(PICO_ON_DEVICE)
