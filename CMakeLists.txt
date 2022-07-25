@@ -18,7 +18,9 @@ if (TARGET tinyusb_device)
     add_executable(pico-btn-led-nn pico-btn-led-nn.c )
 
     pico_set_program_name(pico-btn-led-nn "pico-btn-led-nn")
-    pico_set_program_version(pico-btn-led-nn "0.1")
+    pico_set_program_description(pico-btn-led-nn "Test to control external and internal in with multicore.")
+    pico_set_program_url(pico-btn-led-nn "https://github.com/irgalieri/pico-btn-led-nn")
+    pico_set_program_version(pico-btn-led-nn "0.2")
 
     pico_enable_stdio_uart(pico-btn-led-nn 0)
     pico_enable_stdio_usb(pico-btn-led-nn 1)
